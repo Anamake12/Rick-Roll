@@ -1,0 +1,18 @@
+import webbrowser
+
+lol_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+def lol():
+    webbrowser.open(lol_url)
+
+def main():
+    print("Welcome to the lol app!")
+    choice = input("Would you like to be lolled? (yes/no): ").lower()
+    if choice == "yes":
+        print("Get ready to be lolled!")
+        lol()
+    else:
+        print("Okay, maybe another time!")
+
+if __name__ == "__main__":
+    main()
